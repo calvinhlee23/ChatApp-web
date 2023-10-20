@@ -1,5 +1,5 @@
-import styles from "./page.module.css";
+import HomeContainer from "@/src/Home/HomeContainer";
 
-export default function HomeApp() {
-  return <main className={styles.main}>Hi this is Home App SSR</main>;
+export default function Home() {
+  return <HomeContainer />;
 }
