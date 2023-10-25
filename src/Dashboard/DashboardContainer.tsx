@@ -1,6 +1,5 @@
 import { DashboardContextProvider } from "./context/dashboardContext";
 import { ReactElement } from "react";
-import type { InferGetStaticPropsType, GetStaticProps } from "next";
 import Hello from "./Hello";
 
 async function initFetch() {

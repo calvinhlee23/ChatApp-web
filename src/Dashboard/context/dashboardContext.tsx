@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactNode, createContext, useEffect, useState } from "react";
+import { ReactNode, createContext, useState } from "react";
 
 type DashboardContextType = {
   isDefaultView: boolean;
