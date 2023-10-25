@@ -1,14 +1,13 @@
+import { DashboardContextProvider } from "./context/dashboardContext";
 import { ReactElement } from "react";
 import Hello from "./Hello";
 
 export default function DashboardContainer(): ReactElement {
-  setInterval(() => {
-    console.log("Client");
-  }, 2000);
+  console.warn("server: Dashboard");
   return (
-    <div>
-      Hi this is Dashboard Root
+    <DashboardContextProvider>
+      <div>{"Hi this is Dashboard Root"}</div>
       <Hello />
-    </div>
+    </DashboardContextProvider>
   );
 }
